@@ -26,7 +26,7 @@
             </div>
         </nav>
         <div class="mt-5">
-                <router-view/>
+            <router-view/>
         </div>
     </div>
 </template>
@@ -51,5 +51,10 @@
 
     #nav a.router-link-exact-active {
         color: #42b983;
+    }
+
+    label {
+      float: left;
+
     }
 </style>
