@@ -37,25 +37,24 @@
         mounted() {
             axios
                 .get(`https://free.currconv.com/api/v7/convert?q=${this.type}&compact=ultra&apiKey=${this.key}`)
-                .then(response => console.log(response))
+                .then(response => this.value_to = response)
                 .catch(error => {
                     console.log()
+
                 })
         },
         methods: {
-
-
             converter() {
                 debugger
                 var result = this.value * this.value_to
 
                 var result = result.toString()
-                console.log(result)
+
+                // 5.1232342  = [ 5 , 12345] a partir do .
 
                 var split = result.split(".");
 
                 console.log(split)
-                // this.result = result.substring(0, this.validValue(split[0]))
 
                 this.result = split[0] + '.' + split[1].substring(0, this.validValue(split[0]))
             },
