@@ -1,0 +1,38 @@
+body{
+    background: rgb(182, 182, 250);
+    font: normal 15pt arial;
+    line-height: 30pt;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.356) 4px 4px 10px;
+}
+footer{
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+#preencher{
+    text-align: left;
+}
+#txtano{
+    width: 200px;
+    font: normal 14pt arial;
+}
+#masc{
+    margin-left: 30px;
+}
+#femi{
+    margin-left: 50px;
+}
+#resposta{
+    text-align: center;
+}
